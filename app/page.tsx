@@ -6,7 +6,6 @@ import BackgroundEffects from "@/components/background-effects";
 import ThemeSelector from "@/components/theme-selector";
 import MobileMenu from "@/components/mobile-menu";
 import Sidebar from "@/components/sidebar";
-import HeroSection from "@/components/sections/hero-section";
 import AboutSection from "@/components/sections/about-section";
 import ExperienceSection from "@/components/sections/experience-section";
 import ProjectsSection from "@/components/sections/projects-section";
@@ -80,7 +79,6 @@ export default function Home() {
           {/* Main Content */}
           <main className="lg:w-[60%] lg:ml-[40%] px-6 py-12 lg:py-16 lg:pr-16 lg:pl-16">
             {/* Hero Section - Mobile Only */}
-            <HeroSection />
 
             {/* About Section */}
             <AboutSection ref={setSectionRef("about")} isDesktop={isDesktop} />

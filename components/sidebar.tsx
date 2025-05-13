@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Resume from "./resume";
 
 interface SidebarProps {
   activeSection: string;
@@ -17,9 +18,13 @@ export default function Sidebar({
       <div className="space-y-8">
         <div>
           <div className="text-accent font-mono text-xl mb-4 floating hover-snappy-scale inline-block">
-            MM
+            MC
           </div>
-          <h1 className="text-4xl font-bold text-light mb-3">Maamoun Chebbi</h1>
+          <p className="font-mono text-accent mb-5">Hi, my name is</p>
+
+          <h1 className="text-4xl font-bold text-light mb-3 ">
+            Maamoun Chebbi
+          </h1>
           <h2 className="text-2xl font-bold text-muted mb-6">
             Software Engineer
           </h2>
@@ -104,15 +109,6 @@ export default function Sidebar({
             </li>
           </ul>
         </nav>
-
-        <div className="hidden lg:block">
-          <Button
-            variant="outline"
-            className="border-accent text-accent hover:bg-[var(--accent-color)]-10 mt-8 px-8 py-6 text-base shimmer hover-snappy-scale"
-          >
-            Resume
-          </Button>
-        </div>
       </div>
 
       <div className="hidden lg:flex space-x-6 mt-8">
