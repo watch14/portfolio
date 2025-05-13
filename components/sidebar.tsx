@@ -17,9 +17,9 @@ export default function Sidebar({
     <aside className="lg:w-[40%] lg:h-screen lg:fixed lg:top-0 lg:overflow-auto px-6 py-12 lg:p-16 lg:flex lg:flex-col lg:justify-between">
       <div className="space-y-8">
         <div>
-          <div className="text-accent font-mono text-xl mb-4 floating hover-snappy-scale inline-block">
+          {/* <div className="text-accent font-mono text-xl mb-4 floating hover-snappy-scale inline-block">
             MC
-          </div>
+          </div> */}
           <p className="font-mono text-accent mb-5">Hi, my name is</p>
 
           <h1 className="text-4xl font-bold text-light mb-3 ">
