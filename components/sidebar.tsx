@@ -19,13 +19,11 @@ export default function Sidebar({
           <div className="text-accent font-mono text-xl mb-4 floating hover-snappy-scale inline-block">
             MM
           </div>
-          <h1 className="text-4xl font-bold text-light mb-3">
-            Maamoun Maamoun
-          </h1>
+          <h1 className="text-4xl font-bold text-light mb-3">Maamoun Chebbi</h1>
           <h2 className="text-2xl font-bold text-muted mb-6">
-            Front End Engineer
+            Software Engineer
           </h2>
-          <p className="text-muted mb-8 text-lg max-w-md">
+          <p className="text-muted mb-8 text-sg max-w-md">
             I build accessible, pixel-perfect digital experiences for the web.
           </p>
         </div>
