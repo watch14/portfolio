@@ -1,0 +1,536 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color Theme Variables */
+:root {
+  /* Current Teal Theme with Darker Background */
+  --accent-color: #64ffda;
+  --accent-light: #9effeb;
+  --accent-dark: #00b380;
+  --bg-dark: #05101f; /* Darker background */
+  --bg-medium: #0a192f; /* Darker medium background */
+  --bg-light: #112240; /* Darker light background */
+  --text-light: #e6f1ff;
+  --text-muted: #8892b0;
+}
+
+/* Royal Purple Theme */
+.theme-purple {
+  --accent-color: #8a4fff;
+  --accent-light: #b088ff;
+  --accent-dark: #6a3ac9;
+  --bg-dark: #080a17; /* Darker background */
+  --bg-medium: #0f172a; /* Darker medium background */
+  --bg-light: #1e293b; /* Darker light background */
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+/* Ocean Blue Theme */
+.theme-blue {
+  --accent-color: #3b82f6;
+  --accent-light: #60a5fa;
+  --accent-dark: #2563eb;
+  --bg-dark: #080a17; /* Darker background */
+  --bg-medium: #0f172a; /* Darker medium background */
+  --bg-light: #1e293b; /* Darker light background */
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+/* Emerald Green Theme */
+.theme-green {
+  --accent-color: #10b981;
+  --accent-light: #34d399;
+  --accent-dark: #059669;
+  --bg-dark: #080a17; /* Darker background */
+  --bg-medium: #0f172a; /* Darker medium background */
+  --bg-light: #1e293b; /* Darker light background */
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+/* Sunset Orange Theme */
+.theme-orange {
+  --accent-color: #f97316;
+  --accent-light: #fb923c;
+  --accent-dark: #ea580c;
+  --bg-dark: #080a17; /* Darker background */
+  --bg-medium: #0f172a; /* Darker medium background */
+  --bg-light: #1e293b; /* Darker light background */
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+/* Ruby Red Theme */
+.theme-red {
+  --accent-color: #ef4444;
+  --accent-light: #f87171;
+  --accent-dark: #dc2626;
+  --bg-dark: #080a17; /* Darker background */
+  --bg-medium: #0f172a; /* Darker medium background */
+  --bg-light: #1e293b; /* Darker light background */
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 171 70% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 171 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-mono {
+  font-family: var(--font-fira-code);
+}
+
+.font-sans {
+  font-family: var(--font-inter);
+}
+
+/* For smooth transitions */
+a,
+button {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Improved spacing for paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Better line height for readability */
+p,
+li {
+  line-height: 1.7;
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(0.98);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(var(--accent-color-rgb, 100, 255, 218), 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(var(--accent-color-rgb, 100, 255, 218), 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(var(--accent-color-rgb, 100, 255, 218), 0.3);
+  }
+}
+
+/* New floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* New shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Snappy hover animations */
+@keyframes snappy-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes snappy-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes snappy-border {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 0 2px var(--accent-color);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+section {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Improved focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 0px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-medium);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Navigation line animation */
+.nav-line {
+  transition: width 0.7s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Project card hover effect */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+/* Spotlight effect for links */
+a:hover {
+  text-shadow: 0 0 8px rgba(var(--accent-color-rgb, 100, 255, 218), 0.3);
+}
+
+/* Smooth section transitions */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Enhanced button hover effects */
+.accent-btn:hover {
+  animation: glow 2s infinite;
+}
+
+/* Cinematic transitions */
+.transition-cinematic {
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Hidden pattern reveal effect */
+.pattern-reveal {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.pattern-reveal.visible {
+  opacity: 1;
+}
+
+/* Theme-specific styles */
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg-medium {
+  background-color: var(--bg-medium);
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.border-accent {
+  border-color: var(--accent-color);
+}
+
+.hover\:text-accent:hover {
+  color: var(--accent-color);
+}
+
+.hover\:bg-accent-10:hover {
+  background-color: rgba(var(--accent-color-rgb, 100, 255, 218), 0.1);
+}
+
+/* Floating animation class */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Shimmer effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--accent-color-rgb, 100, 255, 218), 0.1),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 8s infinite linear;
+}
+
+/* Snappy hover effect classes */
+.hover-snappy-scale {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-snappy-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-snappy-rotate {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-snappy-rotate:hover {
+  transform: rotate(3deg);
+}
+
+.hover-snappy-border {
+  transition: box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-snappy-border:hover {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.hover-snappy-text {
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+
+.hover-snappy-text:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 8px rgba(var(--accent-color-rgb, 100, 255, 218), 0.3);
+}
+
+.hover-snappy-underline {
+  position: relative;
+}
+
+.hover-snappy-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-snappy-underline:hover::after {
+  width: 100%;
+}
+
+.hover-snappy-bg {
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.hover-snappy-bg:hover {
+  background-color: var(--bg-light);
+  transform: translateY(-2px);
+}
+
+.hover-snappy-accent {
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-snappy-accent:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.hover-snappy-shadow {
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.hover-snappy-shadow:hover {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Color Theme Previews */
+.theme-preview {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.theme-preview-header {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.theme-preview-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.color-swatch {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+.accent-swatch {
+  background-color: var(--accent-color);
+}
+
+.bg-dark-swatch {
+  background-color: var(--bg-dark);
+}
+
+.bg-medium-swatch {
+  background-color: var(--bg-medium);
+}
