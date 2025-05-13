@@ -114,28 +114,28 @@ export default function Sidebar({
       <div className="hidden lg:flex space-x-6 mt-8">
         <Link
           href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale transform hover:-translate-y-1 duration-200"
+          className="text-muted hover-snappy-text hover-snappy-scale  "
         >
           <Github className="w-6 h-6" />
           <span className="sr-only">GitHub</span>
         </Link>
         <Link
           href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale transform hover:-translate-y-1 duration-200"
+          className="text-muted hover-snappy-text hover-snappy-scale  "
         >
           <Linkedin className="w-6 h-6" />
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
           href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale transform hover:-translate-y-1 duration-200"
+          className="text-muted hover-snappy-text hover-snappy-scale  "
         >
           <Twitter className="w-6 h-6" />
           <span className="sr-only">Twitter</span>
         </Link>
         <Link
           href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale transform hover:-translate-y-1 duration-200"
+          className="text-muted hover-snappy-text hover-snappy-scale  "
         >
           <Mail className="w-6 h-6" />
           <span className="sr-only">Email</span>

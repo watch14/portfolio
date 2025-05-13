@@ -9,7 +9,7 @@ export default function Resume() {
         variant="outline"
         className="border-accent text-accent hover:bg-[var(--accent-color)]-10 
         mt-8 px-8 py-6 shimmer hover:text-text-accent hover-snappy-text 
-        
+        hover-snappy-shadow
         "
       >
         Resume

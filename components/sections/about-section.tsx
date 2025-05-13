@@ -25,19 +25,18 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
           <p className="text-muted mb-6 leading-relaxed">
             I'm a{" "}
             <span className="text-accent hover-snappy-text inline-block">
-              {" "}
-              full-stack
+              Full-Stack Web Developer
             </span>{" "}
-            software engineer with a strong focus on backend development. I
-            build performant, scalable systems and clean, user-friendly
-            interfaces that work seamlessly across platforms. With a passion for
-            problem-solving and clean architecture, I enjoy working across the
-            stack — from designing robust APIs and managing databases to
-            crafting intuitive frontend experiences. My approach emphasizes
-            performance, accessibility, and maintainability. I thrive in
-            collaborative environments where I can build real-world solutions,
-            ship quality code, and keep growing through continuous learning and
-            meaningful challenges.
+            with a strong focus on backend development. I build performant,
+            scalable systems and clean, user-friendly interfaces that work
+            seamlessly across platforms. With a passion for problem-solving and
+            clean architecture, I enjoy working across the stack — from
+            designing robust APIs and managing databases to crafting intuitive
+            frontend experiences. My approach emphasizes performance,
+            accessibility, and maintainability. I thrive in collaborative
+            environments where I can build real-world solutions, ship quality
+            code, and keep growing through continuous learning and meaningful
+            challenges.
           </p>
           <p className="text-muted leading-relaxed">
             My favorite work lies at the intersection of design and development,
