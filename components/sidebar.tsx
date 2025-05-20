@@ -32,7 +32,8 @@ export default function Sidebar({
             Software Engineer
           </h2>
           <p className="text-muted mb-8 text-sg max-w-md">
-            I build accessible, pixel-perfect digital experiences for the web.
+            I create scalable, user-friendly web applications with clean design
+            and strong focus on performance and usability.
           </p>
         </div>
 
