@@ -38,7 +38,7 @@ export default function Sidebar({
         </div>
 
         <nav className="hidden lg:block text-sm">
-          <ul className="space-y-5 font-mono text-sm">
+          <ul className="space-y-4 font-mono text-sm">
             <li>
               <Link
                 href="#about"
