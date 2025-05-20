@@ -46,7 +46,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
           <p className="text-muted">
             Here are a few technologies I've been working with recently:
           </p>
-          <ul className="grid grid-cols-2 gap-2 font-mono text-xs">
+          <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
             <li className="flex items-center hover-snappy-text">
               <span className="text-accent mr-2">▹</span> JavaScript
             </li>
