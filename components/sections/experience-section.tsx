@@ -101,6 +101,9 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                     HTML & CSS
                   </span>
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                    Tailwind CSS
+                  </span>
+                  <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
                     WordPress
                   </span>
                 </div>
@@ -132,16 +135,16 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
-                    JavaScript
-                  </span>
-                  <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
-                    SCSS
-                  </span>
-                  <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
                     React
                   </span>
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
-                    Ember
+                    JavaScript
+                  </span>
+                  <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                    HTML & CSS
+                  </span>
+                  <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                    Tailwind CSS
                   </span>
                 </div>
               </div>
