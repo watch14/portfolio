@@ -14,13 +14,16 @@ export default function Sidebar({
   setNavLineRef,
 }: SidebarProps) {
   return (
-    <aside className="lg:w-[40%] lg:h-screen lg:fixed lg:top-0 lg:overflow-auto px-6 py-12 lg:p-16 lg:flex lg:flex-col lg:justify-between">
+    <aside
+      className="lg:w-[40%] lg:h-screen lg:fixed lg:top-0 lg:overflow-auto px-6 py-12 
+    lg:p-16 lg:flex lg:flex-col lg:justify-between"
+    >
       <div className="space-y-8">
         <div>
           {/* <div className="text-accent font-mono text-xl mb-4 floating hover-snappy-scale inline-block">
             MC
           </div> */}
-          <p className="font-mono text-accent mb-5">Hi, my name is</p>
+          <p className="font-mono text-accent mb-0">Hi, my name is</p>
 
           <h1 className="text-4xl font-bold text-light mb-3 ">
             Maamoun Chebbi
@@ -33,8 +36,8 @@ export default function Sidebar({
           </p>
         </div>
 
-        <nav className="hidden lg:block">
-          <ul className="space-y-6 font-mono text-sm">
+        <nav className="hidden lg:block text-sm">
+          <ul className="space-y-5 font-mono text-sm">
             <li>
               <Link
                 href="#about"
@@ -50,7 +53,7 @@ export default function Sidebar({
                     opacity: activeSection === "about" ? "1" : "0.7",
                   }}
                 ></div>
-                <span className="text-base tracking-wider">ABOUT</span>
+                <span className=" tracking-wider">ABOUT</span>
               </Link>
             </li>
             <li>
@@ -68,7 +71,7 @@ export default function Sidebar({
                     opacity: activeSection === "experience" ? "1" : "0.7",
                   }}
                 ></div>
-                <span className="text-base tracking-wider">EXPERIENCE</span>
+                <span className=" tracking-wider">EXPERIENCE</span>
               </Link>
             </li>
             <li>
@@ -86,7 +89,7 @@ export default function Sidebar({
                     opacity: activeSection === "projects" ? "1" : "0.7",
                   }}
                 ></div>
-                <span className="text-base tracking-wider">PROJECTS</span>
+                <span className="tracking-wider">PROJECTS</span>
               </Link>
             </li>
             <li>
@@ -104,41 +107,60 @@ export default function Sidebar({
                     opacity: activeSection === "contact" ? "1" : "0.7",
                   }}
                 ></div>
-                <span className="text-base tracking-wider">CONTACT</span>
+                <span className=" tracking-wider">CONTACT</span>
               </Link>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div className="hidden lg:flex space-x-6 mt-8">
-        <Link
-          href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale  "
-        >
-          <Github className="w-6 h-6" />
-          <span className="sr-only">GitHub</span>
+      <div className="hidden lg:flex space-x-4 mt-8">
+        {/* GitHub */}
+        <Link href="https://github.com/watch14" passHref legacyBehavior>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted hover-snappy-text hover-snappy-scale flex items-center gap-2"
+          >
+            <Github className="w-5 h-5" />
+            <span className="sr-only">GitHub</span>
+          </a>
         </Link>
+
+        {/* LinkedIn */}
         <Link
-          href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale  "
+          href="https://www.linkedin.com/in/maamoun-chebbi-a791b3159/"
+          passHref
+          legacyBehavior
         >
-          <Linkedin className="w-6 h-6" />
-          <span className="sr-only">LinkedIn</span>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted hover-snappy-text hover-snappy-scale flex items-center gap-2"
+          >
+            <Linkedin className="w-5 h-5" />
+            <span className="sr-only">LinkedIn</span>
+          </a>
         </Link>
-        <Link
-          href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale  "
-        >
-          <Twitter className="w-6 h-6" />
-          <span className="sr-only">Twitter</span>
+
+        {/* Twitter */}
+        <Link href="https://twitter.com/YOUR_HANDLE" passHref legacyBehavior>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted hover-snappy-text hover-snappy-scale flex items-center gap-2"
+          >
+            <Twitter className="w-5 h-5" />
+            <span className="sr-only">Twitter</span>
+          </a>
         </Link>
-        <Link
-          href="#"
-          className="text-muted hover-snappy-text hover-snappy-scale  "
-        >
-          <Mail className="w-6 h-6" />
-          <span className="sr-only">Email</span>
+
+        {/* Email (mailto link) */}
+        <Link href="mailto:youremail@example.com" passHref legacyBehavior>
+          <a className="text-muted hover-snappy-text hover-snappy-scale flex items-center gap-2">
+            <Mail className="w-5 h-5" />
+            <span className="sr-only">Email</span>
+          </a>
         </Link>
       </div>
     </aside>

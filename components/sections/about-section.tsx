@@ -49,7 +49,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
           </p>
           <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
             <li className="flex items-center hover-snappy-text">
-              <span className="text-accent mr-2">▹</span> JavaScript (ES6+)
+              <span className="text-accent mr-2">▹</span> JavaScript
             </li>
             <li className="flex items-center hover-snappy-text">
               <span className="text-accent mr-2">▹</span> TypeScript
