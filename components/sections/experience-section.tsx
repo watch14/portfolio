@@ -35,7 +35,7 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                     <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-accent" />
                   </span>
                 </h3>
-                <p className="text-muted mb-6 leading-relaxed">
+                <p className="text-muted mb-6 leading-relaxed text-sm">
                   Built and integrated RESTful APIs, connected backend logic to
                   frontend interfaces, and contributed to both system
                   architecture and UI functionality. Focused primarily on
@@ -79,7 +79,7 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                     <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-accent" />
                   </Link>
                 </h3>
-                <p className="text-muted mb-6 leading-relaxed">
+                <p className="text-muted mb-6 leading-relaxed text-sm">
                   Developed and maintained the e-commerce platform for
                   Naksha.tn, focusing on both frontend design and backend
                   functionality. Built product pages, shopping cart features,
@@ -128,7 +128,7 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                     <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-accent" />
                   </Link>
                 </h3>
-                <p className="text-muted mb-6 leading-relaxed">
+                <p className="text-muted mb-6 leading-relaxed text-sm">
                   Developed and styled interactive web apps including the user
                   interface of an embeddable web player widget for in-browser
                   user authorization and full song playback.

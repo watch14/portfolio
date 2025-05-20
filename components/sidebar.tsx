@@ -31,7 +31,7 @@ export default function Sidebar({
           <h2 className="text-2xl font-bold text-muted mb-6">
             Software Engineer
           </h2>
-          <p className="text-muted mb-8 text-sg max-w-md">
+          <p className="text-muted mb-8 text-sm max-w-md">
             I create scalable, user-friendly web applications with clean design
             and strong focus on performance and usability.
           </p>

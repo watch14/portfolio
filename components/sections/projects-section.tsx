@@ -47,7 +47,7 @@ const ProjectsSection = forwardRef<HTMLElement, ProjectsSectionProps>(
                 E-Commerce Platform
               </h3>
               <div className="bg-medium p-6 rounded shadow-xl mb-6">
-                <p className="text-muted leading-relaxed">
+                <p className="text-muted leading-relaxed text-sm">
                   A full-stack e-commerce platform built with Angular, Node.js,
                   and MongoDB. Features product listings, shopping cart, secure
                   authentication, and Stripe payment integration.
@@ -106,7 +106,7 @@ const ProjectsSection = forwardRef<HTMLElement, ProjectsSectionProps>(
                 Interactive Japanese Study Tool
               </h3>
               <div className="bg-medium p-6 rounded shadow-xl mb-6">
-                <p className="text-muted leading-relaxed">
+                <p className="text-muted leading-relaxed text-sm">
                   A personal Japanese learning web app built with React,
                   Node.js, and MongoDB. Features include text input with
                   Japanese conversion, drawing tools, rich note editing, and
@@ -175,7 +175,7 @@ const ProjectsSection = forwardRef<HTMLElement, ProjectsSectionProps>(
             <h4 className="text-light font-bold mb-2 hover-snappy-text">
               FeedME
             </h4>
-            <p className="text-muted mb-6 flex-grow leading-relaxed">
+            <p className="text-muted mb-6 flex-grow leading-relaxed text-sm">
               A meal planner suggesting recipes by ingredients, country, or
               random, with cooking videos.
             </p>
@@ -206,7 +206,7 @@ const ProjectsSection = forwardRef<HTMLElement, ProjectsSectionProps>(
             <h4 className="text-light font-bold mb-2 hover-snappy-text">
               AnimeSaver API
             </h4>
-            <p className="text-muted mb-6 flex-grow leading-relaxed">
+            <p className="text-muted mb-6 flex-grow leading-relaxed text-sm">
               A Flask API to track anime, with MyAnimeList integration and full
               user management.
             </p>
