@@ -54,13 +54,16 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
               <span className="text-accent mr-2">▹</span> TypeScript
             </li>
             <li className="flex items-center hover-snappy-text">
+              <span className="text-accent mr-2">▹</span> Python
+            </li>
+            <li className="flex items-center hover-snappy-text">
+              <span className="text-accent mr-2">▹</span> Node.js
+            </li>
+            <li className="flex items-center hover-snappy-text">
               <span className="text-accent mr-2">▹</span> React
             </li>
             <li className="flex items-center hover-snappy-text">
               <span className="text-accent mr-2">▹</span> Next.js
-            </li>
-            <li className="flex items-center hover-snappy-text">
-              <span className="text-accent mr-2">▹</span> Node.js
             </li>
             <li className="flex items-center hover-snappy-text">
               <span className="text-accent mr-2">▹</span> Tailwind CSS
