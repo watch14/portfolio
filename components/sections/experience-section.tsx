@@ -42,7 +42,7 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                   backend tasks while collaborating across teams to ship
                   reliable, scalable features.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-6 text-xs">
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
                     Node.js
                   </span>
@@ -87,7 +87,7 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                   inventory, and user authentication to deliver a smooth online
                   shopping experience.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-6 text-xs">
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
                     Node.js
                   </span>

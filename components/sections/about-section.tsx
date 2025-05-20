@@ -10,7 +10,7 @@ interface AboutSectionProps {
 const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
   ({ isDesktop }, ref) => {
     return (
-      <section id="about" ref={ref} className="px-6 py-4 pt-0 ">
+      <section id="about" ref={ref} className=" ">
         {!isDesktop && (
           <div>
             <h2 className="text-2xl font-bold text-light mb-8 ">
@@ -21,7 +21,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
 
         {!isDesktop && <div></div>}
         <div className="space-y-6">
-          <p className="text-muted mb-6 leading-relaxed">
+          <p className="text-muted mb-6 leading-relaxed text-sm">
             I'm a{" "}
             <span className="text-accent hover-snappy-text inline-block">
               Full-Stack Web Developer
@@ -46,7 +46,7 @@ const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
           <p className="text-muted">
             Here are a few technologies I've been working with recently:
           </p>
-          <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
+          <ul className="grid grid-cols-2 gap-2 font-mono text-xs">
             <li className="flex items-center hover-snappy-text">
               <span className="text-accent mr-2">▹</span> JavaScript
             </li>
