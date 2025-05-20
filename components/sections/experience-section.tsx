@@ -80,12 +80,17 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                   </Link>
                 </h3>
                 <p className="text-muted mb-6 leading-relaxed">
-                  Developed and styled interactive web apps for clients across
-                  various industries. Collaborated with designers to implement
-                  pixel-perfect UI components and optimized website performance,
-                  achieving a 30% improvement in load times.
+                  Developed and maintained the e-commerce platform for
+                  Naksha.tn, focusing on both frontend design and backend
+                  functionality. Built product pages, shopping cart features,
+                  and order handling logic. Integrated APIs for payments,
+                  inventory, and user authentication to deliver a smooth online
+                  shopping experience.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                    Node.js
+                  </span>
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
                     JavaScript
                   </span>
@@ -93,7 +98,7 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
                     React
                   </span>
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
-                    HTML & SCSS
+                    HTML & CSS
                   </span>
                   <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
                     WordPress
@@ -106,16 +111,17 @@ const ExperienceSection = forwardRef<HTMLElement, ExperienceSectionProps>(
           <div>
             <div className="flex items-start mb-4">
               <div className="text-sm font-mono text-accent w-32 flex-shrink-0">
-                2016 — 2018
+                2021 — 2021
               </div>
               <div>
                 <h3 className="text-xl font-bold text-light mb-1 flex items-center group">
-                  UI Engineer Co-op <span className="mx-2">·</span>
+                  Frontend Development Intern
+                  <span className="mx-2">·</span>
                   <Link
-                    href="#"
+                    href="https://pixelstrend.agency/"
                     className="inline-flex items-center hover-snappy-text"
                   >
-                    Tech Startup
+                    Pixel Trend
                     <ArrowUpRight className="w-4 h-4 ml-1 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-accent" />
                   </Link>
                 </h3>
