@@ -10,17 +10,16 @@ interface AboutSectionProps {
 const AboutSection = forwardRef<HTMLElement, AboutSectionProps>(
   ({ isDesktop }, ref) => {
     return (
-      <section id="about" ref={ref} className="pb-32 pt-10 ">
+      <section id="about" ref={ref} className="px-6 py-4 pt-0 ">
         {!isDesktop && (
           <div>
-            <h2 className="text-2xl font-bold text-light mb-8">
+            <h2 className="text-2xl font-bold text-light mb-8 ">
               <span className="text-accent font-mono mr-2">01.</span>About Me
             </h2>
           </div>
         )}
 
         {!isDesktop && <div></div>}
-
         <div className="space-y-6">
           <p className="text-muted mb-6 leading-relaxed">
             I'm a{" "}
