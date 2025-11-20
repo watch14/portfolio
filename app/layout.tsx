@@ -17,10 +17,15 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Maamoun Maamoun | Portfolio",
+  title: "Maamoun Chebbi | Portfolio",
   description:
-    "Personal portfolio website of Maamoun Maamoun, a software developer specializing in building exceptional digital experiences.",
+    "Personal portfolio website of Maamoun Chebbi, a software developer specializing in building exceptional digital experiences.",
   generator: "v0.dev",
+  icons: {
+    icon: "/tab.png",
+    shortcut: "/tab.png",
+    apple: "/tab.png",
+  },
 };
 
 export default function RootLayout({
