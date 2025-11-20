@@ -32,7 +32,7 @@ export default function Footer() {
           <Mail className="w-5 h-5" />
         </Link>
       </div>
-      <p>Designed & Built by Maamoun Maamoun</p>
+      <p>Designed & Built by Maamoun Chebbi</p>
     </footer>
   );
 }
