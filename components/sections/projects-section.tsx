@@ -130,7 +130,7 @@ const ProjectsSection = forwardRef<HTMLElement, ProjectsSectionProps>(
               </ul>
               <div className="flex gap-4">
                 <Link
-                  href="https://github.com/watch14/FeedME-0x1_Project"
+                  href="https://github.com/watch14/NoteBook"
                   className="text-light hover-snappy-text hover-snappy-scale"
                 >
                   <Github className="w-5 h-5" />
@@ -142,6 +142,65 @@ const ProjectsSection = forwardRef<HTMLElement, ProjectsSectionProps>(
                 >
                   <ExternalLink className="w-5 h-5" />
                   <span className="sr-only">External Link</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative grid md:grid-cols-12 mb-24">
+          <div className="md:col-span-7 md:col-start-1 md:row-start-1 relative z-10">
+            <div className="relative group">
+              <Link
+                href="https://stafet.co"
+                className="block relative hover-snappy-scale"
+              >
+                <div className="absolute inset-0 bg-accent/20 group-hover:bg-transparent transition-all duration-300 z-10"></div>
+                <img
+                  src="/stafet.png"
+                  alt="E-Commerce Platform"
+                  className="rounded shadow-lg"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="md:col-span-6 md:col-start-7 md:row-start-1 relative z-20 mt-4 md:mt-0">
+            <div className="md:text-right">
+              <p className="font-mono text-accent text-sm mb-2">
+                Featured Project
+              </p>
+              <h3 className="text-light text-xl font-bold mb-4 hover-snappy-text">
+                Sales & Marketing Platform
+              </h3>
+              <div className="bg-medium p-6 rounded shadow-xl mb-6">
+                <p className="text-muted leading-relaxed text-sm">
+                  Developed a B2B sales and marketing services website with a
+                  fully customizable admin panel, allowing the team to update
+                  all site content without developer assistance. Focused on
+                  clear messaging, strong UI/UX, and scalable architecture.
+                </p>
+              </div>
+              <ul className="flex flex-wrap gap-3 font-mono text-xs mb-6 md:justify-end">
+                <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                  Node.js
+                </span>
+                <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                  JavaScript
+                </span>
+                <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                  React
+                </span>
+                <span className="bg-medium text-accent px-3 py-1 rounded text-xs font-mono hover-snappy-scale">
+                  Firebase
+                </span>
+              </ul>
+              <div className="flex gap-4 md:justify-end">
+                <Link
+                  href="https://stafet.co/"
+                  className="text-light hover-snappy-text hover-snappy-scale"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  <span className="sr-only">GitHub</span>
                 </Link>
               </div>
             </div>
